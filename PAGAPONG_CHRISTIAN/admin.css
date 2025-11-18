@@ -27,27 +27,62 @@ td, th{
     padding: 10px;
     text-align: center;
 }
-#addstudent{
-    width: 30%;
-    padding: 10px;
-    background: #5cb85c;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 50%;
-}
+#addstudent,
 #deleteStudent{
     display: inline-block;
     width: 30%;
     padding: 10px;
-    background: #fc2727;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 50%;
-
+    margin: 10px 5px;
+    vertical-align: middle;
 }
+
+#addstudent{
+    background: #5cb85c;
+}
+
+#deleteStudent{
+    background: #fc2727;
+}
+
+.student-actions{
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* Modal styles */
+.modal{
+    display: none; /* shown via JS */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content{
+    background: #fff;
+    padding: 18px;
+    border-radius: 6px;
+    max-width: 520px;
+    width: 90%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+.modal-content h3{ margin-top: 0; }
+.modal-content .form-row{ margin-bottom: 10px; text-align: left; }
+.modal-content label{ display:block; font-size: 13px; margin-bottom: 4px; }
+.modal-content input[type="text"], .modal-content input[type="email"]{ width: 100%; padding: 8px; box-sizing: border-box; }
+.modal-actions{ text-align: right; margin-top: 8px; }
+.btn-primary{ background:#5cb85c; color:#fff; border:none; padding:8px 12px; border-radius:4px; cursor:pointer; }
+.btn-secondary{ background:#ccc; color:#000; border:none; padding:8px 12px; border-radius:4px; cursor:pointer; margin-left:8px; }
+
+.delete-list{ max-height:280px; overflow:auto; border:1px solid #eee; padding:8px; margin-top:6px; }
+.delete-row{ padding:6px 4px; border-bottom:1px solid #f1f1f1; }
+.delete-row label{ font-size:14px; }
+
+/* Reuse modal styles for edit modal, no extra CSS required, but ensure inputs full width */
+.modal-content input[type="text"], .modal-content input[type="email"]{ width:100%; padding:8px; box-sizing:border-box; }

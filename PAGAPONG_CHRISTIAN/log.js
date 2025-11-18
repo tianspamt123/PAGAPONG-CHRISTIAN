@@ -24,8 +24,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 
     if (email === defaultEmail && password === defaultPassword) {
-        alert('Login successful!');
-        window.location.href = 'adminIndex.html'; 
+        // client-side validation passed — submit form to server-side PHP handler
+        document.getElementById('loginForm').submit();
     } else {
         alert('Invalid email or password.');
     }

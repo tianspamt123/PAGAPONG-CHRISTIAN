@@ -1,0 +1,9 @@
+CREATE DATABASE pagapong;
+
+USE pagapong;
+
+CREATE TABLE students (
+    studentid INT AUTO_INCREMENT PRIMARY KEY,
+    studentname VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
