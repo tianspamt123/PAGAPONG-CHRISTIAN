@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    align-content: center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+Table{
+    width: 80%;
+    margin: auto;
+    border: black 1px solid;
+
+}
+td, th{
+    border: black 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+#addstudent{
+    width: 30%;
+    padding: 10px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 50%;
+}
+#deleteStudent{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    background: #fc2727;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 50%;
+
+}
